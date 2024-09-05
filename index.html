@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <title>Letter</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="letter.js" defer></script>
   </head>
   <body>
+    <audio src="./audio/kiss me.ogg"  autoplay>
+      Your browser does not support the audio element.
+    </audio>
+    
     <div class="container">
       <div class="envelope-wrapper">
         <div class="envelope">
           <div class="letter">
             <div class="text">
-              <strong>Dear Person.</strong>
+              <strong>Dear CJ.</strong>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                labore omnis minus maiores laboriosam, facere in beatae esse.
+                In my 7670.25 days existing in this world, 1461 days of that is me being inlove with you. And those
+                1461 days will continously counting. We may be far apart, but our hearts are closer than ever.
+                 
               </p>
             </div>
+            <div class="anniversary-message"><strong>Happy Anniversary!</strong></div>
           </div>
         </div>
         <div class="heart"></div>
@@ -40,11 +47,11 @@
         if (envelope.classList.contains("flap")) {
           setTimeout(() => {
             polaroid.classList.add("show");
-          }, 3000); // 3 seconds delay
+          }, 8000); // 3 seconds delay
 
           setTimeout(() => {
             button.classList.add("show-button");
-          }, 9000); // 8 seconds delay
+          }, 1000); // 8 seconds delay
         } else {
           polaroid.classList.remove("show");
           button.classList.remove("show-button");

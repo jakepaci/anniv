@@ -5,9 +5,8 @@ envelope.addEventListener("click", () => {
   envelope.classList.toggle("flap");
 
   if (envelope.classList.contains("flap")) {
-    // Play the audio only when the envelope is clicked
-    audio.play().catch((error) => {
-      console.error("Audio playback failed:", error);
-    });
+    // Unmute and play the audio when the envelope is clicked
+    audio.muted = false;
+    audio.play();
   }
 });

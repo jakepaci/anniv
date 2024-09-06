@@ -11,7 +11,8 @@
     --button-bg-color: #ff4081;
     --button-txt-color: #fff;
   }
-  
+
+    background-image: url('img/software.jpeg)';
   body {
     margin: 0;
     padding: 0;
